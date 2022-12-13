@@ -57,6 +57,7 @@ html, body {
  
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	will-change: background-color;
 }
 
 .section{
@@ -189,7 +190,10 @@ ul.social-icons {
 
 
 
-
+.frame a,
+.frame button {
+	pointer-events: auto;
+}
 
 
 
