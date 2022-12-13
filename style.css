@@ -190,10 +190,136 @@ ul.social-icons {
 
 
 
+
 .frame a,
 .frame button {
 	pointer-events: auto;
 }
+
+.frame__title {
+	grid-area: title;
+	justify-content: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0.5rem;
+	width: 12rem;
+}
+
+.frame__title-main {
+	font-size: 1rem;
+	margin: 0;
+	font-weight: 300;
+}
+
+.frame__title-back {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+}
+
+.frame__title-back span {
+	display: none;
+}
+
+.frame__title-back svg {
+	fill: var(--color-link);
+}
+
+.frame__title-back:hover svg,
+.frame__title-back:focus svg {
+	fill: var(--color-link-hover);
+}
+
+.frame__title-prev {
+	margin-top: 0.5rem;
+}
+
+.frame__title,
+.frame .cdawrap {
+	transition: opacity 0.3s;
+}
+
+.frame--hidden .frame__title,
+.frame--hidden .frame .cdawrap {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.button-menu {
+	z-index: 100;
+	width: 1.65rem;
+	height: 0.65rem;
+	color: var(--color-menu);
+	cursor: not-allowed;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	grid-area: menu;
+	align-self: start;
+	justify-self: end;
+}
+
+.content {
+	display: grid;
+	place-items: center;
+	width: 100%;
+}
+
+.content__item {
+	height: 100vh;
+	width: 100%;
+	padding-top: 1rem;
+	display: grid;
+	align-items: center;
+}
+
+.content__item-title {
+	grid-area: 1 / 1 / -1 / -1;
+	margin: 0;
+	cursor: default;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 0.85;
+	font-size: 15.5vw;
+	text-transform: uppercase;
+	font-family: ivymode, sans-serif;
+	font-weight: 200;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.content__item-title span {
+	position: relative;
+	z-index: 100;
+	display: block;
+	will-change: transform, opacity;
+}
+
+
+
+.content__item-img {
+	background-size: cover;
+	background-position: 50% 50%;
+	align-self: center;
+	justify-self: center;
+	grid-area: 1 / 1 / -1 / -1;
+	height: 50vh;
+	width: 80vw;
+	will-change: transform;
+}
+
+
+
+
+
+
+
+
+
 
 
 
