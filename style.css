@@ -5,6 +5,7 @@
 
 html {
   background-color: #dbad84;
+  background-image: url("b.png");
   height: 100%;
   line-height: 1.5;
   overflow-x: hidden;
