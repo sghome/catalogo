@@ -56,7 +56,8 @@ html, body {
   -webkit-text-size-adjust: 100%;
  
 	-webkit-font-smoothing: antialiased;
-
+	-moz-osx-font-smoothing: grayscale;
+	will-change: background-color;
 }
 
 .section{
@@ -244,18 +245,7 @@ ul.social-icons {
 	pointer-events: none;
 }
 
-.button-menu {
-	z-index: 100;
-	width: 1.65rem;
-	height: 0.65rem;
-	color: var(--color-menu);
-	cursor: not-allowed;
-	border-top: 1px solid;
-	border-bottom: 1px solid;
-	grid-area: menu;
-	align-self: start;
-	justify-self: end;
-}
+
 
 .content {
 	display: grid;
@@ -300,16 +290,6 @@ ul.social-icons {
 
 
 
-.content__item-img {
-	background-size: cover;
-	background-position: 50% 50%;
-	align-self: center;
-	justify-self: center;
-	grid-area: 1 / 1 / -1 / -1;
-	height: 50vh;
-	width: 80vw;
-	will-change: transform;
-}
 
 
 
@@ -328,6 +308,7 @@ ul.social-icons {
 	align-self: center;
 	justify-self: center;
 	color: #fff;
+	opacity: 0.1;
 	font-size: 2rem;
 	cursor: pointer;
 	font-family: ivymode, sans-serif;
